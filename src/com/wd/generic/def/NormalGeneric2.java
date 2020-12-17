@@ -35,6 +35,10 @@ public class NormalGeneric2<T, K> {
         this.result = result;
     }
 
+    /**
+     * 泛型示例
+     * @param args
+     */
     public static void main(String[] args) {
         NormalGeneric2 normalGeneric = new NormalGeneric2<String, Integer>();
         normalGeneric.setData("Hello");

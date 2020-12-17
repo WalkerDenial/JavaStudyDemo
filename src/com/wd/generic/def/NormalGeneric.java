@@ -24,6 +24,10 @@ public class NormalGeneric<T> {
         this.data = data;
     }
 
+    /**
+     * 泛型示例
+     * @param args
+     */
     public static void main(String[] args) {
         NormalGeneric normalGeneric = new NormalGeneric<String>();
         normalGeneric.setData("Hello");

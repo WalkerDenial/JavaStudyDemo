@@ -23,8 +23,8 @@ public class ConstructTest {
             System.out.println(constructor);
 
             // 调用构造器的 newInstance() 方法创建对象
-            Object obj = constructor.newInstance(false);
-            System.out.println(obj);
+            Child child = (Child) constructor.newInstance(false);
+            System.out.println(child.toString());
         } catch (Exception e) {
             e.printStackTrace();
         }

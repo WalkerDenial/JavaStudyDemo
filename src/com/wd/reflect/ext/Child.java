@@ -19,47 +19,47 @@ public class Child extends Parent {
         System.out.println("Child(), defaultChildField: " + defaultChildField);
     }
 
-    public int getPrivateChildField() {
-        System.out.println("getPrivateChildField()");
-        return privateChildField;
-    }
+//    public int getPrivateChildField() {
+//        System.out.println("getPrivateChildField()");
+//        return privateChildField;
+//    }
+//
+//    public void setPrivateChildField(int privateChildField) {
+//        this.privateChildField = privateChildField;
+//        System.out.println("setPrivateChildField()");
+//    }
+//
+//    public String getProtectedChildField() {
+//        System.out.println("getProtectedChildField()");
+//        return protectedChildField;
+//    }
+//
+//    public void setProtectedChildField(String protectedChildField) {
+//        this.protectedChildField = protectedChildField;
+//        System.out.println("setProtectedChildField()");
+//    }
+//
+//    public double getPublicChildField() {
+//        System.out.println("getPublicChildField()");
+//        return publicChildField;
+//    }
+//
+//    public void setPublicChildField(double publicChildField) {
+//        this.publicChildField = publicChildField;
+//        System.out.println("setPublicChildField()");
+//    }
+//
+//    public boolean isDefaultChildField() {
+//        System.out.println("isDefaultChildField()");
+//        return defaultChildField;
+//    }
+//
+//    public void setDefaultChildField(boolean defaultChildField) {
+//        this.defaultChildField = defaultChildField;
+//        System.out.println("setDefaultChildField()");
+//    }
 
-    public void setPrivateChildField(int privateChildField) {
-        this.privateChildField = privateChildField;
-        System.out.println("setPrivateChildField()");
-    }
-
-    public String getProtectedChildField() {
-        System.out.println("getProtectedChildField()");
-        return protectedChildField;
-    }
-
-    public void setProtectedChildField(String protectedChildField) {
-        this.protectedChildField = protectedChildField;
-        System.out.println("setProtectedChildField()");
-    }
-
-    public double getPublicChildField() {
-        System.out.println("getPublicChildField()");
-        return publicChildField;
-    }
-
-    public void setPublicChildField(double publicChildField) {
-        this.publicChildField = publicChildField;
-        System.out.println("setPublicChildField()");
-    }
-
-    public boolean isDefaultChildField() {
-        System.out.println("isDefaultChildField()");
-        return defaultChildField;
-    }
-
-    public void setDefaultChildField(boolean defaultChildField) {
-        this.defaultChildField = defaultChildField;
-        System.out.println("setDefaultChildField()");
-    }
-
-    protected void privateChildMethod() {
+    private void privateChildMethod() {
         System.out.println("privateChildMethod()");
     }
 
@@ -67,11 +67,11 @@ public class Child extends Parent {
         System.out.println("protectedChildFMethod()");
     }
 
-    protected void publicChildMethod() {
+    public void publicChildMethod() {
         System.out.println("publicChildMethod()");
     }
 
-    protected void defaultChildMethod() {
+    void defaultChildMethod() {
         System.out.println("defaultChildMethod()");
     }
 

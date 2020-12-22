@@ -19,47 +19,47 @@ public class Parent {
         System.out.println("Parent(), defaultParentField: " + defaultParentField);
     }
 
-    public int getPrivateParentField() {
-        System.out.println("getPrivateParentField()");
-        return privateParentField;
-    }
+//    public int getPrivateParentField() {
+//        System.out.println("getPrivateParentField()");
+//        return privateParentField;
+//    }
+//
+//    public void setPrivateParentField(int privateParentField) {
+//        this.privateParentField = privateParentField;
+//        System.out.println("setPrivateParentField(), privateParentField: " + privateParentField);
+//    }
+//
+//    public String getProtectedParentField() {
+//        System.out.println("getProtectedParentField()");
+//        return protectedParentField;
+//    }
+//
+//    public void setProtectedParentField(String protectedParentField) {
+//        this.protectedParentField = protectedParentField;
+//        System.out.println("setProtectedParentField()");
+//    }
+//
+//    public double getPublicParentField() {
+//        System.out.println("getPublicParentField()");
+//        return publicParentField;
+//    }
+//
+//    public void setPublicParentField(double publicParentField) {
+//        this.publicParentField = publicParentField;
+//        System.out.println("setPublicParentField()");
+//    }
+//
+//    public boolean isDefaultParentField() {
+//        System.out.println("isDefaultParentField()");
+//        return defaultParentField;
+//    }
+//
+//    public void setDefaultParentField(boolean defaultParentField) {
+//        this.defaultParentField = defaultParentField;
+//        System.out.println("setDefaultParentField()");
+//    }
 
-    public void setPrivateParentField(int privateParentField) {
-        this.privateParentField = privateParentField;
-        System.out.println("setPrivateParentField(), privateParentField: " + privateParentField);
-    }
-
-    public String getProtectedParentField() {
-        System.out.println("getProtectedParentField()");
-        return protectedParentField;
-    }
-
-    public void setProtectedParentField(String protectedParentField) {
-        this.protectedParentField = protectedParentField;
-        System.out.println("setProtectedParentField()");
-    }
-
-    public double getPublicParentField() {
-        System.out.println("getPublicParentField()");
-        return publicParentField;
-    }
-
-    public void setPublicParentField(double publicParentField) {
-        this.publicParentField = publicParentField;
-        System.out.println("setPublicParentField()");
-    }
-
-    public boolean isDefaultParentField() {
-        System.out.println("isDefaultParentField()");
-        return defaultParentField;
-    }
-
-    public void setDefaultParentField(boolean defaultParentField) {
-        this.defaultParentField = defaultParentField;
-        System.out.println("setDefaultParentField()");
-    }
-
-    protected void privateParentMethod() {
+    private void privateParentMethod() {
         System.out.println("privateParentMethod()");
     }
 
@@ -67,11 +67,11 @@ public class Parent {
         System.out.println("protectedParentFMethod()");
     }
 
-    protected void publicParentMethod() {
+    public void publicParentMethod() {
         System.out.println("publicParentMethod()");
     }
 
-    protected void defaultParentMethod() {
+    void defaultParentMethod() {
         System.out.println("defaultParentMethod()");
     }
 

@@ -9,6 +9,7 @@ public class Child extends Parent {
     protected String protectedChildField = "Child";
     public double publicChildField = 99;
     boolean defaultChildField = false;
+    private final int finalField = 0;
 
     public Child() {
         System.out.println("Child()");

@@ -37,6 +37,15 @@ public class FieldTest {
             // 修改属性值
             field.set(child, -1);
             System.out.println(field.get(child));
+
+            // 测试 final 类型属性
+            Field finalField = clazz.getDeclaredField("finalField");
+            finalField.setAccessible(true);
+            // 输出属性值
+            System.out.println(finalField.get(child));
+            // 修改属性值
+            finalField.set(child, 99);
+            System.out.println(finalField.get(child));
         } catch (Exception e) {
             e.printStackTrace();
         }

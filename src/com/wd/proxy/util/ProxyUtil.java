@@ -10,7 +10,7 @@ public class ProxyUtil {
 
     public static void generateClassFile(Class clazz, String proxyName) {
         byte[] proxyClassFile = ProxyGenerator.generateProxyClass(proxyName, new Class[]{clazz});
-        String paths = clazz.getResource(".").getPath();
+        String paths = clazz.getResource(".").getPath().replace("%20", " ");
         System.out.println(paths);
         FileOutputStream fos = null;
         try {

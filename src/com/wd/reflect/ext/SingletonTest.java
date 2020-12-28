@@ -26,14 +26,19 @@ public class SingletonTest {
             // 通过反射获取新对象
             Class clazz = SingletonTest.class;
 
-            // 尝试通过反射先将 INSTANCE 置为空，从而避免 newInstance 抛出异常
-//            Field field = clazz.getDeclaredField("INSTANCE");
-//            field.setAccessible(true);
-//            field.set(clazz, null);
-
             SingletonTest test1 = (SingletonTest) clazz.newInstance();
             // 判断两个对象是否相同
             System.out.println(test == test1);
+
+            // 尝试通过反射先将 INSTANCE 置为空，从而避免 newInstance 抛出异常
+//            Field field = clazz.getDeclaredField("INSTANCE");
+//            field.setAccessible(true);
+//
+//            Field modifyField = Field.class.getDeclaredField("modifiers");
+//            modifyField.setAccessible(true);
+//            modifyField.setInt(field, field.getModifiers() & ~Modifier.FINAL);
+//
+//            field.set(clazz, null);
         } catch (Exception e) {
             e.printStackTrace();
         }

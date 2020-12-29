@@ -5,7 +5,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
 /**
- * 启用线程方式
+ * 启用线程的 3 种方式
  */
 public class NewThread {
 

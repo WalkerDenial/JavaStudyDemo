@@ -18,12 +18,6 @@ public class StartAndRun {
         }
     }
 
-    private static class User {
-        public void us() {
-
-        }
-    }
-
     public static void main(String[] args) {
         ThreadRun threadRun = new ThreadRun();
         threadRun.setName("beCalled");

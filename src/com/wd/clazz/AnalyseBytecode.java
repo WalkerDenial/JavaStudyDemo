@@ -5,20 +5,12 @@ package com.wd.clazz;
  */
 public class AnalyseBytecode {
 
-    private int i = 0;
-
-    private void addAtFront() {
-        ++i;
-    }
-
-    private void addAtEnd() {
-        i++;
-    }
-
     public static void main(String[] args) {
-        AnalyseBytecode analyseBytecode = new AnalyseBytecode();
-        analyseBytecode.addAtFront();
-        analyseBytecode.addAtEnd();
+        int i = 0;
+        int num = i++;
+        System.out.println("num: " + num);
+        num = ++i;
+        System.out.println("num: " + num);
     }
 
 }
